@@ -1,12 +1,36 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
+
 body {
   background: #EDEDED;
 }
+
+#instruction{
+  width: 25%;
+  float: left;
+  border: 1px solid;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+#photos{
+  width:65%;
+  float: left;
+}
+
+.hello{
+  text-align: left;
+  padding-left: 50px;
+
+}
 .popular li, .latest li {
   display: inline-block;
-  width: 306px;
-  height: 306px;
+  width: 250px;
+  height: 250px;
   margin: 0px 20px 20px 0px;
+}
+
+img{
+  width:250px;
 }
 .popular, .latest {
   width: 1004px;
@@ -16,10 +40,15 @@ h1 {
   text-align: center;
   font-family: 'Lato';
   font-size: 36px;
-  padding: 20px;
   font-weight: bold;
   color: #4F4F4F;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Lato'
 }
 
 img {
@@ -34,3 +63,4 @@ span {
   display: block;
   padding: 10px 0px;
 }
+
