@@ -3,11 +3,13 @@
         $('#tagButton').click(function() { //number2 in rubric
                 $.getJSON("tag.json", function(responseObject) { //receives tag.json file from the server
                         console.log(responseObject.tags.length);
-                        var displayText; 
+                        var displayText =""; 
+                        console.log(displayText);
                         for (var i = 0; i<responseObject.tags.length; i++) {
                                 var tag = responseObject.tags[i];
                                 displayText += "<li>" + tag.tagName+ "<\/li>"; //show list of json data
                                 };
+                                console.log(displayText);
                 $(".tags").html(displayText);
                 } );  // getJSON
         } );  // click
@@ -28,7 +30,7 @@
                 for (var i = 0; i < 6; i++) { //limit to six photos or videos since there are so many
                   //there are two types of uploads: image and video. 
                   if(data.data[i].type == "image"){
-                    $(".popular").append("<li><a target='_blank' href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></li>");
+                    $(".popular").append("<li><a target='_blank' href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a> <span> cool photos </span></li>");
 
                   }
                   else{
@@ -51,7 +53,7 @@
                 $('.popular').empty();
                  $('#title').text("Popular photos");
                 for (var i = 0; i < 6; i++) {
-                  $(".popular").append("<li><a target='_blank' href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></li>");
+                  $(".popular").append("<li><a target='_blank' href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a><span> cool photos </span></li>");
                 }
               }
             });

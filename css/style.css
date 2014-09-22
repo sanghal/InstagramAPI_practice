@@ -1,15 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 body {
-  background: #EDEDED;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #instruction{
-  width: 25%;
-  float: left;
+  margin-left:350px;
+  width: 50%;
   border: 1px solid;
   padding-left: 10px;
   padding-bottom: 15px;
+  background: #EDEDED;
+  text-align: center;
 }
 
 #photos{
@@ -18,7 +20,7 @@ body {
 }
 
 .hello{
-  text-align: left;
+  text-align: center;
   padding-left: 50px;
 
 }
@@ -34,6 +36,7 @@ img{
 }
 .popular, .latest {
   width: 1004px;
+  padding-left: 350px;
   margin: auto;
 }
 h1 {
@@ -48,7 +51,8 @@ h1 {
 h2{
   font-size: 20px;
   font-weight: 300;
-  font-family: 'Lato'
+  font-family: 'Shadows Into Light', cursive;
+  
 }
 
 img {
@@ -57,7 +61,7 @@ img {
   box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 span {
-  font-family: 'Lato';
+  font-family: 'Shadows Into Light', cursive;
   font-size: 24px;
   text-align: center;
   display: block;

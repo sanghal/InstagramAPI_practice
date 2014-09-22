@@ -6,29 +6,31 @@
 	</script>
 
 	<script type='text/javascript' src='instagram.js'></script>
+	<script type='text/javascript' src='instagramjquery.js'></script>
+
 	<link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div id = "tab">
 
-<h1 class="hello"> Hello,<br>Lets Explore!</h1>
+<h1 class="hello"> Hello Welcome to Mystagram!</h1>
 
 <div id="instruction">
 	<div id="first">
-		<h2>First, show Possible Tags</h2>
-		<button type="button" id="tagButton">Tags</button>
+		<h2>These are example tags you can use to search photos
+		<button type="button" id="tagButton">Tags</button> </h2>
 	</div>
 
 	<ul class="tags"></ul>
 
 	<div id="second">
-		<h2>Second, type any tag</h2>
-		<input type="text" name="tag" /> 
-		<button type="submit" id="tagSearch">search</button>
+		<h2>Type tag for photos<input type="text" name="tag" /> 
+		<button type="submit" id="tagSearch">search</button></h2>
 	</div>
 
 	<div id="third">
-		<h2>Third, lets just see popular photos</h2>
-		<button type="button" id="popularButton">Popular</button>
+		<h2>Lets just see popular photos<button type="button" id="popularButton">Popular</button></h2>
 	</div>
 </div>
 
@@ -36,6 +38,7 @@
 	<h1 id="title"></h1>
 	<ul class="popular">
 	</ul>
+</div>
 </div>
 </body>
 </html>
